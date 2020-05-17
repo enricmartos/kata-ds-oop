@@ -1,7 +1,5 @@
 package restaurant;
 
-import java.util.Objects;
-
 public class CustomerGroup {
     private final int id;
     private final int size; // number of people in the group
