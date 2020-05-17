@@ -6,8 +6,8 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SeatingManagerTest {
-    private static SeatingManager seatingManager;
+public class SeatingManagerImplTest {
+    private static SeatingManagerImpl seatingManager;
 
     @BeforeClass
     public static void beforeClass() {
@@ -17,7 +17,7 @@ public class SeatingManagerTest {
 
         tables.add(table1);
         tables.add(table2);
-        seatingManager = new SeatingManager(tables, 3);
+        seatingManager = new SeatingManagerImpl(tables, 3);
     }
 
     @Test
