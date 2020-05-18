@@ -17,7 +17,8 @@ public class SeatingManagerImplTest {
 
         tables.add(table1);
         tables.add(table2);
-        seatingManager = new SeatingManagerImpl(tables, 3);
+        SeatingStore seatingStore = new InMemorySeatingStore(tables);
+        seatingManager = new SeatingManagerImpl(3, seatingStore);
     }
 
     @Test

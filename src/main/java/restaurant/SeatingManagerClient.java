@@ -36,7 +36,8 @@ public class SeatingManagerClient {
         SeatingManager seatingManager = new SeatingManagerImpl(queueCapacity, seatingStore);
 //        seatingManager.printRestaurantTables();
 
-        System.out.println("Enter the movement writing 'a' (arrival) or 'l' (leaving) - id of customer group - size of customer group. Press 's' to finish");
+        System.out.println("Enter the movement writing 'a' (arrival) or 'l' (leaving) - id of customer group - size of customer group." +
+                " For instance, a-0-2 (arrival of customer group with id 0 that has 2 people, and l-0 (customer group with id 0 leaves). Press 's' to finish");
         while (scanner.hasNextLine()) {
             String movement = scanner.nextLine();
             if (movement.equals("s")) {
